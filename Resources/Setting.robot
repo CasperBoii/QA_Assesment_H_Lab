@@ -2,19 +2,23 @@
 Library     SeleniumLibrary
 
 *** Variables ***
-${Browser_Edge}        chrome
-${Shopee_URL}          https://shopee.co.th/
+${Browser}             Chrome   #If have a ChormeDriver issue change to Edge
+${Shopee_URL}          https://www.lazada.co.th/
 ${Shopee_Username}     joauji@gmail.com  
 ${Shopee_Password}     2914856Joo
 
-*** Keywords ***
-Open Shopee home page
-    Open Browser    ${Shopee_URL}    ${Browser_Edge}    
-    Maximize Browser Window
-    Wait Until Element Is Visible    xpath=//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button
-    Click Element    xpath=//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button
 
-    Input Text    xpath=//*[@id="main"]/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[1]/div[1]/input    ${Shopee_Username}
-    Input Password    xpath=//*[@id="main"]/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[2]/div[1]/input    ${Shopee_Password}
-    Click Button    xpath=//*[@id="main"]/div/div[2]/div/div/div/div[2]/div/div[2]/form/button
-    #Wait Until Page Contains Element    xpath=//*[@id="main"]/div/header/div[2]
+*** Keywords ***
+Open Lazada home page
+    Open Browser    ${Shopee_URL}    ${Browser}    
+    Maximize Browser Window
+    Wait Until Page Contains Element    xpath=//*[@id="q"]
+    Location Should Be    https://www.lazada.co.th/#?
+
+    Title Should Be    Lazada.co.th - ช้อปปิ้งออนไลน์ รับเครดิตเงินคืน 10% ส่งฟรีทุกวัน
+
+    # Verify that specific elements are present
+    Page Should Contain Element    xpath=//div[@class='lzd-logo-content']
+    Page Should Contain Element    xpath=//input[@placeholder='Search in Lazada']
+    Page Should Contain Element    xpath=//p[text()='Flash Sale']
+    
