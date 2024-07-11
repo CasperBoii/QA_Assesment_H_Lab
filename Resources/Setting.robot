@@ -3,14 +3,11 @@ Library     SeleniumLibrary
 
 *** Variables ***
 ${Browser}             Chrome   #If have a ChormeDriver issue change to Edge
-${Shopee_URL}          https://www.lazada.co.th/
-${Shopee_Username}     joauji@gmail.com  
-${Shopee_Password}     2914856Joo
-
+${Lazada_URL}          https://www.lazada.co.th/
 
 *** Keywords ***
 Open Lazada home page
-    Open Browser    ${Shopee_URL}    ${Browser}    
+    Open Browser    ${Lazada_URL}    ${Browser}    
     Maximize Browser Window
     Wait Until Page Contains Element    xpath=//*[@id="q"]
     Location Should Be    https://www.lazada.co.th/#?

@@ -44,7 +44,7 @@ S_01 F_01 TC-03 To verify the "Lazada" home page can be successfully accessed wi
 
     Close Browser
 
-S_01 F_01 TC-04 To verify the "Shopee" home page can be successfully accessed, and then change to Thai language.
+S_01 F_01 TC-04 To verify the "Lazada" home page can be successfully accessed, and then change to Thai language.
     [Documentation]    Lazada home page with English language.
     [Tags]             Lazada home page.
 
@@ -66,7 +66,7 @@ S_01 F_01 TC-04 To verify the "Shopee" home page can be successfully accessed, a
 
     Close Browser
 
-S_01 F_01 TC-05 To verify the "Shopee" home page can be successfully accessed, and then change to English language.
+S_01 F_01 TC-05 To verify the "Lazada" home page can be successfully accessed, and then change to English language.
     [Documentation]    Lazada home page with English language.
     [Tags]             Lazada home page.
 
@@ -117,7 +117,7 @@ S_02 F_01 TC-01 To verfify display of "Search" field can display correctly.
 
     Close Browser
 
-S_02 F_01 TC-02 To verify the "Search" function on Shopee's home page when click "Search" icon can work properly.
+S_02 F_01 TC-02 To verify the "Search" function on Lazada's home page when click "Search" icon can work properly.
     [Documentation]    Search function with keywords "baby toys".
     [Tags]             Search with keyword.
 
@@ -135,7 +135,7 @@ S_02 F_01 TC-02 To verify the "Search" function on Shopee's home page when click
 
     Close Browser
 
-S_02 F_01 TC-03 To verify the "Search" function on Shopee's home page when press "Enter" button can work properly.
+S_02 F_01 TC-03 To verify the "Search" function on Lazada's home page when press "Enter" button can work properly.
     [Documentation]    Search function with keywords "baby toys".
     [Tags]             Search with keyword.
 
@@ -153,7 +153,7 @@ S_02 F_01 TC-03 To verify the "Search" function on Shopee's home page when press
 
     Close Browser
 
-S_02 F_01 TC-04 To verify the "Search" function on Shopee's home page when select keyword "baby toy" in drop-down list can work properly.
+S_02 F_01 TC-04 To verify the "Search" function on Lazada's home page when select keyword "baby toy" in drop-down list can work properly.
     [Documentation]    Search function with keywords "baby toys".
     [Tags]             Search with keyword.
 
